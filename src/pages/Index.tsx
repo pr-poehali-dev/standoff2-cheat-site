@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import FileUpload from "@/components/FileUpload";
 
 const Index = () => {
   const features = [
@@ -219,6 +220,19 @@ const Index = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </section>
+
+      {/* File Upload Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">Поделиться файлом</h2>
+          <p className="text-gray-400 text-lg">
+            Загрузите свой файл или добавьте ссылку
+          </p>
+        </div>
+        <div className="max-w-2xl mx-auto">
+          <FileUpload />
         </div>
       </section>
 
