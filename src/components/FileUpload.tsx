@@ -11,8 +11,16 @@ interface UploadedFile {
 }
 
 export default function FileUpload() {
-  const [uploadedFile, setUploadedFile] = useState<UploadedFile | null>(null);
-  const [fileLink, setFileLink] = useState("");
+  const [fileLink, setFileLink] = useState("http://cloudzore.com/file/1614522");
+  const [uploadedFile, setUploadedFile] = useState<{
+    name: string;
+    url: string;
+    size: number;
+  } | null>({
+    name: "1614522",
+    url: "http://cloudzore.com/file/1614522",
+    size: 0,
+  });
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
