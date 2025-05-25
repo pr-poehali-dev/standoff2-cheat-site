@@ -1,3 +1,6 @@
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -75,8 +78,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white">
-      {/* Header */}
-      <header className="container mx-auto px-4 py-6">
+      <Header />
+      <HeroSection />
+      <FeaturesSection />
         <nav className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Icon name="Shield" size={32} className="text-purple-400" />
